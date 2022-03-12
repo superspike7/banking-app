@@ -63,7 +63,7 @@ export default function User({ users, setUsers }) {
     const user = {
       id: users.length + 1,
       name: name,
-      balance: balance,
+      balance: parseInt(balance),
     };
 
     setUsers([...users, user]);
